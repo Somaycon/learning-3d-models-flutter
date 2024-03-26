@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:o3d/o3d.dart';
+import 'package:o3d/package/lib/src/model_viewer_plus.dart';
 
 void main() {
   runApp(const MainApp());
@@ -30,12 +31,11 @@ class _MainAppState extends State<MainApp> {
           centerTitle: true,
         ),
         body: Center(
-            child: O3D(
-          src: 'assets/images/vi_arcane.glb',
-          ar: false,
-          autoPlay: true,
-          controller: controller,
-        )),
+          child: ModelViewer(
+            autoPlay: true,
+            src: 'assets/images/vi_arcane.glb',
+          ),
+        ),
       ),
     );
   }
