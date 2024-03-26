@@ -31,7 +31,7 @@ class _MainAppState extends State<MainApp> {
           centerTitle: true,
         ),
         body: Center(
-          child: ModelViewer(
+          child: O3D(
             autoPlay: true,
             src: 'assets/images/vi_arcane.glb',
           ),
